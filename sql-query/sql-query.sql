@@ -27,6 +27,29 @@ UPDATE `student-database`.student_table
 SET name = "Sora"
 WHERE sr_no = 8;
 
+DELETE FROM `student-database`.techer_table
+WHERE ID = 3;
+
+SELECT MAX(address) FROM `student-database`.techer_table;
+SELECT MIN(address) FROM `student-database`.techer_table;
+
+SELECT * FROM `student-database`.techer_table LIMIT 3;
+
+SELECT MIN(salary) AS smallesalary
+FROM `student-database`.techer_table;
+
+SELECT MAX(salary) AS bigessalary
+FROM `student-database`.techer_table;
+
+SELECT COUNT(salary)
+FROM `student-database`.techer_table;
+
+SELECT AVG(salary)
+FROM `student-database`.techer_table;
+
+SELECT SUM(salary) as sumoftecherssalary
+FROM `student-database`.techer_table;
+
 
 
 
